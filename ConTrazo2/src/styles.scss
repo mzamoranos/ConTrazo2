@@ -1,1 +1,42 @@
+
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+button{ width: auto; padding: 5px;margin: 10px;}
+
+$mqMinWidth: 600px;
+$mqMaxWidth: 850px;
+.content{
+    padding: 5%;
+    height: 100%;
+    background: rgb(250, 130, 86);
+}
+
+picture{
+    @media (min-width: $mqMinWidth) {
+      max-width: 55%;
+     align-items: center;
+    }
+  }
+  h1{
+    align-items: center;
+  }
+  .muro1{
+    @media (min-width: $mqMinWidth) {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    align-self: center;
+    padding: 2%;
+   }
+  }
+  .muro2{
+    @media (min-width: $mqMaxWidth) {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    padding: 2%;
+  }
+  }
