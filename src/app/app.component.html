@@ -1,0 +1,14 @@
+<app-header (SidenavToggle)="drawer.toggle()"></app-header>
+<mat-drawer-container class="container" hasBackdrop="false">
+  <mat-drawer #drawer class="drawer" mode="side">
+   
+  
+<app-sidenav (CloseSidenav)="drawer.close()"></app-sidenav>
+</mat-drawer>
+<mat-drawer-content>
+        <router-outlet></router-outlet>
+      </mat-drawer-content>
+     
+   
+  <!--<app-footer></app-footer>-->
+    </mat-drawer-container>

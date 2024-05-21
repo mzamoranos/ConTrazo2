@@ -1,0 +1,22 @@
+<div class="content">
+    <a fxFlex fxLayout fxLayoutAlign="start" routerLink="/" >
+        <img  src="assets/images/logo.png"
+          alt="Logotipo"
+        />
+      </a>
+
+<div fxFlex fxLayout fxLayoutAlign="end">
+<div  fxHide.xs>
+<!--  -->
+<button mat-stroked-button [routerLink]="['/']" color="warn"> Inicio  </button>
+<button mat-stroked-button [routerLink]="['web/eventos']" color="warn"> Eventos  </button>
+<button mat-stroked-button [routerLink]="['web/talleres']" color="warn"> Talleres  </button>
+  </div>
+  <div fxHide.gt-sm>
+    <button mat-icon-button (click)="onToggleSidenav()" color="warn"> 
+         <mat-icon> menu </mat-icon>
+    </button>  
+ </div>
+</div> 
+
+</div>
